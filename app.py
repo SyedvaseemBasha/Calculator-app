@@ -1,4 +1,5 @@
 from cal_func import do_addition,do_Subtraction
+from multi import do_Multi
 
 
 def main():
@@ -7,6 +8,7 @@ def main():
           \nSelect the function from the given options
           1. Add
           2. Subtract
+          3. Multiplication
           """)
     user_input = input('Select the Function')
 
@@ -17,6 +19,8 @@ def main():
         result = do_addition(a,b)
     elif user_input == '2':
         result = do_Subtraction(a,b)
+    elif user_input == '3':
+        result = do_Multi(a,b)    
 
     print(result)    
 
