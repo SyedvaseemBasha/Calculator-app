@@ -9,6 +9,7 @@ def main():
           1. Add
           2. Subtract
           3. Multiplication
+          4. Division
           """)
     user_input = input('Select the Function')
 
@@ -20,7 +21,9 @@ def main():
     elif user_input == '2':
         result = do_Subtraction(a,b)
     elif user_input == '3':
-        result = do_Multi(a,b)    
+        result = do_Multi(a,b)   
+    elif user_input == '4':
+        result = do_division(a,b)      
 
     print(result)    
 
